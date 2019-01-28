@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev" :"node ./node_modules/http-server/bin/http-server -p 4040 --cors -c-1",
+    "start:prod" :"pm2 start ./node_modules/http-server/bin/http-server -- -p 4040 --cors -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
