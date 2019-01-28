@@ -1,5 +1,6 @@
 {
     "name": "Rent Calculator",
+    "description": "This app takes rent and turns it into deposit, and vice versa.",
     "short_name": "Rent Calculator",
     "icons": [
         {
@@ -13,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "background_color": "#000000",
     "display": "standalone"
 }
