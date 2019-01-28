@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
+    /* font-family: courier; */
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 450px;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inner-container>p{
+    margin-bottom: 60px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border:1px solid #ced4da;
+    border-radius:.25rem;
+    padding: 30px;
+}
+
+div.dual-form-container{
+    display: flex;
+    width: 100%; 
+}
+
+div.form-container,div.inner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.dual-form-container > div.form-container{
+        width: 50%;
+}   
+
+div.dual-form-container > div.form-container:first-child{
+    padding-right: 10px;
+}
+
+div.dual-form-container > div.form-container:last-child{
+    padding-left: 10px;
+}
+
+label{
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color:#ced4da;
+    /* margin-top: 80px; */
+    padding-top: 25px;
+    border-top: 1px solid #ced4da;
+}
+
+footer a{
+    color:#62aeff;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #9fd9e65e;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: .25rem;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #007bff;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #007bff;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 490px) {
+      body{
+          font-size: 14px;
+      }
+    .wrapper{
+        width: 90%!important;
+    }
+  }
+
+  @media screen and (max-height: 650px) {
+    .inner-container>p{
+        margin-bottom: 10px;
+    }
+    
+}

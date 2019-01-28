@@ -1,0 +1,30 @@
+{
+  "name": "rent-calculator",
+  "version": "1.0.0",
+  "description": "This app takes rent and turns it into deposit, and vice versa.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev" :"node ./node_modules/http-server/bin/http-server -p 4040 --cors -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehrdad-redhat/rent-calculator.git"
+  },
+  "keywords": [
+    "maral",
+    "rent",
+    "deposite",
+    "js",
+    "javascript"
+  ],
+  "author": "mehrdad-redhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehrdad-redhat/rent-calculator/issues"
+  },
+  "homepage": "https://github.com/mehrdad-redhat/rent-calculator#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

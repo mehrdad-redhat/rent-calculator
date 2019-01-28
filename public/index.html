@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Rent Calculator">
+    <meta name="application-name" content="Rent Calculator">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Rent Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+       <div class="inner-container">
+            <div class="inner-container">
+                    <h1>Rent Calculator</h1>
+                    <p>► First fill initial values</p>
+                </div>
+        
+        
+                <form>
+                    <div class="dual-form-container">
+                        <div class="form-container">
+                            <label for="rent">Initial rent :</label>
+                            <input autofocus tabindex="1" type="number" min="0" step="5" name="rent" id="rent" class="form-control"
+                                required data-dependency="first">
+                        </div>
+        
+                        <div class="form-container">
+                            <label for="deposit">Initial deposit :</label>
+                            <input type="number" tabindex="2" min="0" step="100" name="deposit" id="deposit" class="form-control"
+                                required data-dependency="second">
+                        </div>
+                    </div>
+        
+                    <div class="form-container">
+                        <label for="c-rent">Calculated rent : <output name="n-rent" for="c-rent">0</output></label>
+                        <input type="range" tabindex="3" value="0" min="0" step="5" max="0" class="slider" id="c-rent">
+                    </div>
+        
+                    <div class="form-container">
+                        <label for="c-deposit">Calculated deposit : <output name="n-deposit" for="c-deposit">0</output></label>
+                        <input type="range" value="0" tabindex="4" min="0" step="50" max="0" class="slider" id="c-deposit">
+                    </div>
+                </form>
+       </div>
+
+
+        <footer>
+            <p>developed by <a href="mailto:mehrdad.redhat@gmail.com">redhat</a> with <i style="color:crimson">♥</i>
+                for <i style="color:crimson">♥</i></p>
+        </footer>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>
