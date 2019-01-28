@@ -26,39 +26,39 @@
 <body>
     <div class="wrapper">
 
-       <div class="inner-container">
+        <div class="inner-container">
             <div class="inner-container">
-                    <h1>Rent Calculator</h1>
-                    <p>► First fill initial values</p>
+                <h1>Rent Calculator</h1>
+                <p>► First fill initial values</p>
+            </div>
+
+
+            <form style="font-family: comic, 'Comic Sans MS'">
+                <div class="dual-form-container">
+                    <div class="form-container">
+                        <label for="rent">Initial rent :</label>
+                        <input autofocus tabindex="1" type="number" min="0" step="5" name="rent" id="rent" class="form-control"
+                            required data-dependency="first">
+                    </div>
+
+                    <div class="form-container">
+                        <label for="deposit">Initial deposit :</label>
+                        <input type="number" tabindex="2" min="0" step="100" name="deposit" id="deposit" class="form-control"
+                            required data-dependency="second">
+                    </div>
                 </div>
-        
-        
-                <form>
-                    <div class="dual-form-container">
-                        <div class="form-container">
-                            <label for="rent">Initial rent :</label>
-                            <input autofocus tabindex="1" type="number" min="0" step="5" name="rent" id="rent" class="form-control"
-                                required data-dependency="first">
-                        </div>
-        
-                        <div class="form-container">
-                            <label for="deposit">Initial deposit :</label>
-                            <input type="number" tabindex="2" min="0" step="100" name="deposit" id="deposit" class="form-control"
-                                required data-dependency="second">
-                        </div>
-                    </div>
-        
-                    <div class="form-container">
-                        <label for="c-rent">Calculated rent : <output name="n-rent" for="c-rent">0</output></label>
-                        <input type="range" tabindex="3" value="0" min="0" step="5" max="0" class="slider" id="c-rent">
-                    </div>
-        
-                    <div class="form-container">
-                        <label for="c-deposit">Calculated deposit : <output name="n-deposit" for="c-deposit">0</output></label>
-                        <input type="range" value="0" tabindex="4" min="0" step="50" max="0" class="slider" id="c-deposit">
-                    </div>
-                </form>
-       </div>
+
+                <div class="form-container">
+                    <label for="c-rent">Calculated rent : <output name="n-rent" for="c-rent">0</output></label>
+                    <input type="range" tabindex="3" value="0" min="0" step="5" max="0" class="slider" id="c-rent">
+                </div>
+
+                <div class="form-container">
+                    <label for="c-deposit">Calculated deposit : <output name="n-deposit" for="c-deposit">0</output></label>
+                    <input type="range" value="0" tabindex="4" min="0" step="50" max="0" class="slider" id="c-deposit">
+                </div>
+            </form>
+        </div>
 
 
         <footer>
